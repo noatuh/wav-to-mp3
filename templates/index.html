@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+</head>
+<body>
+    <h1>Upload File</h1> <h3>This requires FFMPEG installed on your local system.</h3>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
